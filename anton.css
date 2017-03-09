@@ -1,0 +1,235 @@
+/* Fonts */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v1/gG8m82oGcrBJF727xHU04fY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+	unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v1/F4YWuALHubF63LLQPw0rMfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Poppins'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v1/HLBysyo0MQBO_7E-DWLwzg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* */
+
+html {
+	font-family: 'Poppins';
+	-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			
+	font-size: 12px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	margin: 0;
+	font-family: "Poppins";
+	font-size: 16px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box;
+}
+
+* {
+	font: inherit
+}
+
+.container, .container-w-full {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+
+.frm-bt {
+	display: inline-block;
+	padding: 8px 18px;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+			touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+		 -moz-user-select: none;
+			-ms-user-select: none;
+					user-select: none;
+	background-image: none;
+	background-color: buttonface;
+	text-decoration: none;
+	color: buttontext;
+	border: 1px solid transparent;
+	border-radius: 35px;
+}
+
+.frm-bt:hover,
+.frm-bt:focus,
+.frm-bt.focus {
+	color: #333;
+	text-decoration: none;
+}
+.frm-bt:active,
+.frm-bt.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+					box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+
+h1,.h1 {
+	font-size: 38px;
+}
+h2,.h2 {
+	font-size: 32px;
+}
+h3,.h3 {
+	font-size: 26px;
+}
+h4,.h4 {
+	font-size: 20px;
+}
+h5,.h5 {
+	font-size: 16px;
+}
+h6,.h6 {
+	font-size: 14px;
+}
+
+small,.small {
+	font-size: 65%;
+	font-weight: normal;
+	line-height: 1;
+	color: #777;
+}
+
+img, .img-w-full, video, .video-w.full {
+	max-width: 100%;
+}
+
+.grd-ln {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.grd-cl-2, .grd-cl-4 {
+	float: left;
+	position: relative;
+	  min-height: 1px;
+	  padding-right: 15px;
+	  padding-left: 15px;
+}
+
+.grd-cl-2 {
+	width: 50%;
+}
+
+.grd-cl-4{
+	width: 25%;
+}
+
+@media (max-width: 767px) {
+	.grd-cl-2, .grd-cl-4 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.grd-cl-2 {
+		width: 100%;
+	}
+
+	.grd-cl-4 {
+		width: 50%;
+	}
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+	background-color: #cccccc;
+	font-weight: bold;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #efefef;
+}
+
+/* Theme */
+
+/* Colors */
+
+.clr-
