@@ -107,8 +107,14 @@ body {
 	text-decoration: none;
 	color: buttontext;
 	border: 1px solid transparent;
-	border-radius: 35px;
+	border-radius: 36px;
+	outline: none;
 }
+
+button::-moz-focus-inner, input[type=button]::-moz-focus-inner {
+  border: 0;
+}
+
 
 .frm-bt:hover,
 .frm-bt:focus,
@@ -219,17 +225,85 @@ th {
 	font-weight: bold;
 }
 
+thead tr:first-child th:first-child, thead tr:first-child td:first-child{
+	border-top-left-radius: 18px;
+}
+
+thead tr:first-child th:last-child, thead tr:first-child td:last-child{
+	border-top-right-radius: 18px;
+}
+
+tfoot tr:last-child th:first-child, tfoot tr:last-child td:first-child {
+	border-bottom-left-radius: 18px;
+}
+
+tfoot tr:last-child th:first-child, tfoot tr:last-child td:first-child{
+	border-bottom-right-radius: 18px;
+}
+
 td, th {
     text-align: left;
-    padding: 8px;
+    padding: 8px 18px;
 }
 
 tr:nth-child(even) {
     background-color: #efefef;
 }
 
+nav{
+    background-color: buttonface;
+    color: buttontext;
+}
+
+nav ul {
+	padding: 5px 0px;
+}
+
+nav ul li {
+	width: 100%;
+}
+
+@media (min-width: 767px){
+	nav ul li {
+	width: initial;
+}
+}
+
+nav ul li a, nav ul li label{
+	padding: 8px 18px;
+	border: 1px solid transparent;
+    	border-radius: 36px;	
+	text-align: center;
+	display: block;
+}
+
+nav.horizontal ul{	
+    list-style: none;
+    margin-top: 0;
+}
+
+nav.horizontal ul li{
+	display: inline-block;
+
+}
+
+nav.horizontal ul li a{
+	text-decoration: none;
+	color: buttontext;
+	outline: none;
+}
+
+nav.horizontal ul li:active a, nav.horizontal ul li.active a{
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+nav.horizontal ul li a:hover, nav.horizontal ul li a:focus, nav.horizontal ul li a.focus{
+    color: #333;
+    text-decoration: none;
+}
+
 /* Theme */
 
-/* Colors */
-
-.clr-
