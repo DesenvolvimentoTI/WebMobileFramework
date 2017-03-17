@@ -421,3 +421,40 @@ body.thm-pheasant {
 
 width: auto;
 }
+
+/* Theme Black*/
+
+body.thm-black {
+	background-color: #333;
+}
+
+.thm-black h1,
+.thm-black h2,
+.thm-black h3,
+.thm-black h4,
+.thm-black h5,
+.thm-black h6,
+.thm-black .h1,
+.thm-black .h2,
+.thm-black .h3,
+.thm-black .h4,
+.thm-black .h5,
+.thm-black .h6{
+	color: #ccc;
+}
+
+.thm-black table{
+	background-color: #ccc;
+}
+
+.thm-black nav {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.thm-black nav ul li a, .thm-black nav ul li label {
+	color: #ccc;
+}
+
+.thm-black nav.horizontal ul li a:hover, .thm-black nav.horizontal ul li a:focus, .thm-black nav.horizontal ul li a.focus {
+	color: #fff;
+}
